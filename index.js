@@ -23,3 +23,5 @@ sequelize.sync({ alter: true, force: true })
         });
     })
     .catch((err) => console.error('Failed to sync database:', err));
+
+module.exports = app;
