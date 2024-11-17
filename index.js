@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const port = process.env.PORT || 54777;
 const host = "0.0.0.0"
 
-sequelize.sync({ alter: true })
+sequelize.sync({ alter: true, force: true })
     .then(() => {
         console.log('Database synced');
         app.listen(3000, host, () => {
