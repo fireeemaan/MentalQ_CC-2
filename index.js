@@ -18,7 +18,7 @@ const host = "0.0.0.0"
 sequelize.sync({ alter: true })
     .then(() => {
         console.log('Database synced');
-        app.listen(5000, () => {
+        app.listen(3000, () => {
             console.log('Server is running');
         });
     })
